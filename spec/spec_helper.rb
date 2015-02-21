@@ -1,4 +1,6 @@
 Dir[File.expand_path('../../*.rb', __FILE__)].each { |file| require file }
+require 'pry'
+
 
 RSpec.configure do |config|
   config.order = 'random'
