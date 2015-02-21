@@ -1,7 +1,4 @@
 class Robot
-  NAMES = ['Sonny', 'Mokobot', 'Rubber', 'Scrappy', 'Copper', 'Tinker', 'Isetx', 'Grezzer', 'Combot',
-    'Cyd', 'Adeoid', 'Evix', 'Spencer']
-
   REGEXS = {
     formal_greetings: [
       /\Ahi\z/
@@ -17,8 +14,6 @@ class Robot
   attr_reader :name
 
   def initialize
-    @name = NAMES.sample
-
     @talked_subjects = {
       greeting:         false,
       how_are_you:      false,
@@ -46,7 +41,7 @@ class Robot
         end
 
         self.human_name = message unless @human_name
-        return "Hi #{@human_name}, nice to meet you."
+        return "Hi #{@human_name}, nice to meet you. My name is Rubot."
       end
 
       "Sorry, I don't know what you mean."

@@ -21,14 +21,14 @@ RSpec.describe 'Talk' do
         context "with '#{introducing_message}'" do
           it 'learns human name, replying with captalized name' do
             receive_message 'hi', and_return: "Hi human, what's your name?"
-            receive_message introducing_message, and_return: "Hi Lucas, nice to meet you."
+            receive_message introducing_message, and_return: "Hi Lucas, nice to meet you. My name is Rubot."
           end
         end
       end
 
       it 'learns only first human name' do
         receive_message 'hi', and_return: "Hi human, what's your name?"
-        receive_message 'lucas caton', and_return: "Hi Lucas, nice to meet you."
+        receive_message 'lucas caton', and_return: "Hi Lucas, nice to meet you. My name is Rubot."
       end
     end
   end
