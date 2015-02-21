@@ -1,5 +1,5 @@
 RSpec.describe 'Talk' do
-  subject { Robot.new }
+  subject { Rubot.new }
 
   context 'starting a conversation' do
     ['.', '...', ',', ';', '!', '!?', '?!'].each do |punctuation|

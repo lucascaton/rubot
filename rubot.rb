@@ -1,4 +1,4 @@
-class Robot
+class Rubot
   REGEXS = {
     formal_greetings: [
       /\Ahi\z/
