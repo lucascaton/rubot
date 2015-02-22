@@ -5,7 +5,7 @@ require 'pry'
 end
 
 RSpec.configure do |config|
-  config.order = 'random'
+  # config.order = 'random'
   config.color = true
   config.expect_with(:rspec) { |c| c.syntax = :expect }
   config.filter_run focus: true

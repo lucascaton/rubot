@@ -6,9 +6,6 @@ class Rubot
       /\Amy name is (.+)\z/,
       /\Ahi, my name is (.+)\z/
     ]
-
-    # informal_greeting: []
-    # bogan_greeting:    []
   }
 
   attr_reader :name
